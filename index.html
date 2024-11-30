@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./videos/coffe.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header>
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="logo-cafeteria">
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#" onclick="mostrarModal()">Endereço</a>
+            </nav>
+        </section>
+    </header>
+
+
+    <section class="caixa-principal">
+        <div>
+            <h3>O Melhor café da região</h3>
+            <p>Um espaço perfeito para relaxar, trabalhar ou compartilhar momentos especiais. Contamos ainda com um
+                cardápio exclusivo de acompanhamentos frescos e receitas autorais que harmonizam perfeitamente com nosso
+                café. Aqui, cada cliente é tratado com carinho, porque acreditamos que o melhor café é aquele servido
+                com amor. É por isso que somos reconhecidos como a melhor cafeteria da região!</p>
+            <a class="link-button" href="cafe.html">Peça o seu agora</a>
+        </div>
+    </section>
+
+
+    <section class="caixa-sobre">
+        <h2 class="titulo"> <span>Sobre</span> Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./img/about-img.jpeg">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>O que faz nosso café especial?</h3>
+                <p>Na nossa cafeteria, cada xícara de café é uma experiência única! O segredo está nos grãos
+                    selecionados com excelência, provenientes de pequenos produtores locais que cultivam com paixão e
+                    cuidado. Nosso café é torrado artesanalmente, preservando os aromas e sabores mais ricos. Além
+                    disso, oferecemos uma variedade de métodos de preparo, como espresso, coado e prensa francesa, para
+                    agradar todos os paladares.</p>
+                <a class="link-button" href="sobre.html">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="titulo"> <span>Nosso</span> Endereço</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117071.51078624188!2d-46.762790679931655!3d-23.515062699172535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5890be164507%3A0xfe35d7025cf14a18!2sStarbucks!5e0!3m2!1spt-BR!2sbr!4v1732936533726!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
